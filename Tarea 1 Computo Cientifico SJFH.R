@@ -95,8 +95,8 @@ monto_coches <- dataCar%>%
   arrange(desc(monto_total))
 
 # Mostramos el resultado
-monto_coches
-
+monto_coches1 <- head(monto_coches,5)
+monto_coches1
 
 # Ahora graficamos
 ggplot(monto_coches, aes(x = reorder(veh_body, -monto_total), y = monto_total)) +
